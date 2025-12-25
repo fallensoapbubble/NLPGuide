@@ -1,0 +1,54 @@
+name: Update Checklist
+
+on:
+  # Trigger manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Topic name to mark as done (e.g., "Transformers")'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Tick Checkbox via Python
+        run: |
+          python -c "
+          import sys
+          import re
+
+          search_term = '${{ inputs.topic }}'.lower()
+          file_path = 'README.md'
+
+          with open(file_path, 'r') as f:
+              lines = f.readlines()
+
+          found = False
+          with open(file_path, 'w') as f:
+              for line in lines:
+                  # Check if line matches the topic AND has an empty checkbox
+                  if search_term in line.lower() and '- [ ]' in line:
+                      # Replace [ ] with [x]
+                      line = line.replace('- [ ]', '- [x]')
+                      print(f'Marked as done: {line.strip()}')
+                      found = True
+                  f.write(line)
+          
+          if not found:
+              print('No matching unchecked topic found.')
+              sys.exit(1) # Fail the action if nothing was updated
+          "
+
+      - name: Commit and Push Changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "✅ Completed: ${{ inputs.topic }}"
+          file_pattern: README.md
