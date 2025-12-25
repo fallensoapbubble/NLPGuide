@@ -8,7 +8,7 @@ A structured learning path covering classical NLP, Transformers, LLMs, RAG, Agen
 **Source:** [NLP Demystified](https://www.nlpdemystified.org/course)
 *Build the mathematical and conceptual groundwork before diving into LLMs.*
 
-* [/] **1. Introduction**
+* [x] **1. Introduction**
 * [ ] **2. Tokenization**
 * [ ] **3. Basic Preprocessing**
 * [ ] **4. Advanced Preprocessing**
