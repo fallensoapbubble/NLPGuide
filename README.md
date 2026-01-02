@@ -8,7 +8,7 @@ A structured learning path covering classical NLP, Transformers, LLMs, RAG, Agen
 **Source:** [NLP Demystified](https://www.nlpdemystified.org/course)
 *Build the mathematical and conceptual groundwork before diving into LLMs.*
 
-* [] **1. Introduction**
+* [X] **1. Introduction**
 * [ ] **2. Tokenization**
 * [ ] **3. Basic Preprocessing**
 * [ ] **4. Advanced Preprocessing**
@@ -96,25 +96,18 @@ A structured learning path covering classical NLP, Transformers, LLMs, RAG, Agen
 **Source:** [Hugging Face MCP Course](https://huggingface.co/learn/mcp-course/unit1/key-concepts)
 *Standardizing how AI models interact with data and tools.*
 
-* [ ] **0. Welcome to the MCP Course**
-* [ ] **1. Introduction to Model Context Protocol**
-* [ ] **2. Use Case: End-to-End MCP Application**
+* [x] **0. Welcome to the MCP Course**
+* [x] **1. Introduction to Model Context Protocol**
+* [x] **2. Use Case: End-to-End MCP Application**
 * [ ] **3. Advanced MCP Development: Custom Workflow Servers**
 * [ ] 3.1 Use Case: Build a Pull Request Agent on the Hub
 
 
 
----
 
-## 🟠 Part 6: Orchestration Ecosystem
-
-**Source:** [LangChain Ecosystem](https://www.kdnuggets.com/getting-the-most-from-the-langchain-ecosystem)
-*Connecting the dots between models, data, and logic.*
-
-* [ ] **Getting The Most From The LangChain Ecosystem**
 
 ---
-## 🟠 Part 7: LLM fine tuner
+## 🟠 Part 6: LLM fine tuner
 
 **Source:** [Fine Tuning](https://www.youtube.com/watch?v=iOdFUJiB0Zc)
 *Connecting the dots between models.*
