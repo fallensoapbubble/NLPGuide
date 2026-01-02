@@ -1,0 +1,6 @@
+gradio[mcp]
+textblob
+tf-keras
+transformers 
+torch 
+scipy

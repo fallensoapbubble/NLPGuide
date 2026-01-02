@@ -1,0 +1,42 @@
+# Ignore virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+
+
+# Python Virtual Environment Setup Guide
+#
+# Prerequisites
+# Ensure Python is installed and added to your system PATH. 
+# Check version:
+#     python --version
+#
+# 1. Command Prompt (CMD)
+# Create:
+#     python -m venv venv
+# Activate:
+#     venv\Scripts\activate.bat
+# (You will see (venv) appear at the start of your command line)
+# Deactivate:
+#     deactivate
+#
+# 2. Windows PowerShell (PS)
+# Create:
+#     python -m venv venv
+# Activate:
+#     .\venv\Scripts\Activate.ps1
+# Troubleshooting: If you get an error about "running scripts is disabled," run this command first:
+#     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# Deactivate:
+#     deactivate
+#
+# 3. Git Bash
+# Create:
+#     python -m venv venv
+# (Note: Use python, not python3, unless you specifically aliased it).
+# Activate:
+#     source venv/Scripts/activate
+# Deactivate:
+#     deactivate
